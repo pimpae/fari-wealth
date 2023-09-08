@@ -300,6 +300,30 @@ footer .top .linkx img{
   height: auto;
   margin-right: 5px;
 }
+.datepicker {
+  background-color: rgba(255, 255, 255, .8);
+  font-family: 'Kanit', sans-serif;
+  width: 335px;
+}
+.datepicker .table-condensed{
+  width: 100%; 
+}
+.datepicker .day{
+  padding: 11px 9px !important;
+  border-radius: 100%;
+}
+.datepicker .day:hover{
+  background: var(--bg-main) !important;
+  color: #fff !important;
+}
+.datepicker .active.day{
+  background: var(--bg-main) !important;
+  color: #fff !important;
+}
+.datepicker .today.day{
+  background: var(--bg-main2) !important;
+  color: #fff !important;
+}
 
 
 /*
