@@ -24,9 +24,13 @@
 	<main>
 		<section class="select1">
 			<div class="home">
-				<video loop autoplay id="v1">
-					<source src="public/images/FARI2HD.mp4" type="video/mp4">
+				<video loop="true" autoplay="autoplay"   id="vid1"> 
+					<source src="public/images/FARI2HD.mp4" type="video/webm" />
+					<source src="public/images/FARI2HD.mp4" type="video/mp4" />
 				</video>  
+
+				
+				
 				<div class="container">
 					<img src="public/images/logo.png" class="logo">
 					<span class="material-symbols-outlined mute-video" id="mute-video">volume_up </span>
@@ -239,19 +243,18 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
-
+ 
 	<script>
-
-		$(document).ready(function() {
+		
+		
+		
+		$(document).ready(function() {  
 			$( '.form-select' ).select2( {
 				theme: "bootstrap-5"
 			} );  
-
-			$("video").trigger('play');
-
+			$("#vid1")[0].play(); 
 		}); 
-
-		$("video").prop('muted', false); 
+ 
 		$("#mute-video").click( function (){
 			if( $("video").prop('muted') ) {
 				$("video").prop('muted', false);
@@ -270,6 +273,9 @@
 			todayHighlight: true,
 			toggleActive: true
 		});
+
+		
+		$("#vid1")[0].play(); 
 
 	</script>
  
