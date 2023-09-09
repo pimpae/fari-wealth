@@ -260,11 +260,8 @@ footer .bot{
   color: var(--bg-main);
   font-family: 'Kanit', sans-serif;
 }
-footer .bot a{ 
-  font-weight: 300;
-  font-size: 16px;
-  color: var(--bg-main);
-  font-family: 'Kanit', sans-serif;
+footer .bot a{  
+  color: var(--bg-main); 
   text-decoration: underline !important;
 }
 footer .top{
