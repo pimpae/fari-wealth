@@ -249,7 +249,7 @@ form .btn:hover{
   box-shadow: 0px 0px 10px #FFFFFF;
   letter-spacing: 1.8px;
   background-color: #fff !important; 
-}
+} 
 footer .bot{
   height: 50px;
   background-color: #fff;
@@ -257,16 +257,6 @@ footer .bot{
   text-align: center;
   font-weight: 300;
   font-size: 14px;
-  color: var(--bg-main);
-  font-family: 'Kanit', sans-serif;
-}
-footer .bot{
-  height: 50px;
-  background-color: #fff;
-  padding-top: 12px;
-  text-align: center;
-  font-weight: 300;
-  font-size: 16px;
   color: var(--bg-main);
   font-family: 'Kanit', sans-serif;
 }
