@@ -479,7 +479,7 @@ font-family: 'Cormorant Garamond', serif;
   .box-sound{
     position: absolute;
     right: 20px;
-    bottom: 30px;
+    bottom: 90px;
     width: 40px;
     height: 40px;
     background-color: rgba(255, 255, 255, .5);
@@ -489,7 +489,7 @@ font-family: 'Cormorant Garamond', serif;
     align-items: center;
   }
   .box-sound.pausex{ 
-    bottom: 90px; 
+    bottom: 30px; 
   }
 }
 @media only screen and (width: 1024px) { /* iPadPro */ 

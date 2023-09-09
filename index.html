@@ -341,13 +341,25 @@
 		 
 
 		document.addEventListener("DOMContentLoaded", function(){
-			document.body.addEventListener("touchstart", playVideo);
+			// document.body.addEventListener("touchstart", playVideo);
 			function playVideo() {
 				const video = document.getElementById('myVideo');
 				if(video.playing) {
 				} else {
 					video.play();
 				}
+			}
+		});
+
+		
+		jQuery(".pausex").on('click', function(event) { 
+			var video = jQuery("#myVideo"); 
+			if (video.get(0).paused) {
+				video.get(0).play();
+				$('.pausex span').text("play_arrow"); 
+			} else {
+				video.get(0).pause();
+				$('.pausex span').text("pause"); 
 			}
 		});
 
@@ -368,16 +380,9 @@
 			}
 		});
 		
-		jQuery(".pausex").on('click', function(event) { 
-			var video = jQuery("#myVideo"); 
-			if (video.get(0).paused) {
-				video.get(0).play();
-				$('.pausex span').text("play_arrow"); 
-			} else {
-				video.get(0).pause();
-				$('.pausex span').text("pause"); 
-			}
-		});
+
+
+		
 		
 		$('.date').datepicker({
 			format: 'dd MM yyyy',
