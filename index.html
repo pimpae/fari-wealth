@@ -341,7 +341,7 @@
 		 
 
 		document.addEventListener("DOMContentLoaded", function(){
-			// document.body.addEventListener("touchstart", playVideo);
+			document.body.addEventListener("touchstart", playVideo);
 			function playVideo() {
 				const video = document.getElementById('myVideo');
 				if(video.playing) {
