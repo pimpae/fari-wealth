@@ -112,7 +112,8 @@ video {
   transition: .33s all ease-out; 
 }
 .sec2:hover{ 
-  background: url(../images/s22.png); 
+  background: url(../images/s21.png);
+  background-size: 105% auto !important;
 }
 .sec2 .div-flex{
   height: 100vh;
