@@ -24,8 +24,7 @@
 	<main>
 		<section class="select1">
 			<div class="home"> 
-
-				<div class="bg-overlay"></div>
+ 
 				<video class="fullscreen-video" id="myVideo" autoplay="" loop="" muted="" playsinline="" >
 					<source src="public/images/FARI2HD.mp4">
 					Your browser does not support the video tag.
@@ -341,7 +340,7 @@
 		 
 
 		document.addEventListener("DOMContentLoaded", function(){
-			document.body.addEventListener("touchstart", playVideo);
+			//document.body.addEventListener("touchstart", playVideo);
 			function playVideo() {
 				const video = document.getElementById('myVideo');
 				if(video.playing) {
