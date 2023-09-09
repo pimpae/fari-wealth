@@ -20,12 +20,9 @@ video {
   height: 100%;
   object-fit: cover;
 }
-.mute-video{
-  position: absolute;
-  top: 50px;
-  left: 20px;
+.box-sound span{ 
   z-index: 10;
-  color: #fff;
+  color: rgba(0, 0, 0, .65);
   cursor: pointer;
 }
 .select1 .container{
@@ -38,6 +35,21 @@ video {
   margin: auto; 
   width: 150px;
   height: 150px;
+}
+.box-sound{
+  position: absolute;
+  right: 50px;
+  bottom: 130px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-sound.pausex{ 
+  bottom: 50px; 
 }
 .nextx{  
   position: absolute;
@@ -86,9 +98,10 @@ video {
   font-size: 18px;
   font-family: 'Kanit', sans-serif;
   cursor: pointer;
+  font-weight: 300;
 }
 .lang .active{
-  font-weight: 600;
+  font-weight: 500;
 }
 .sec2{
   height: 100vh;
@@ -462,6 +475,21 @@ font-family: 'Cormorant Garamond', serif;
   }
   .qr {
     margin-top: 20px;
+  }
+  .box-sound{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-sound.pausex{ 
+    bottom: 90px; 
   }
 }
 @media only screen and (width: 1024px) { /* iPadPro */ 

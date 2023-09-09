@@ -23,10 +23,7 @@
 	
 	<main>
 		<section class="select1">
-			<div class="home">
-				<!-- <video loop="true" autoplay="autoplay"   id="myVideo">  
-					<source src="public/images/FARI2HD.mp4" type="video/mp4" />
-				</video>   -->
+			<div class="home"> 
 
 				<div class="bg-overlay"></div>
 				<video class="fullscreen-video" id="myVideo" autoplay="autoplay" muted loop>
@@ -36,7 +33,9 @@
 				
 				<div class="container">
 					<img src="public/images/logo.png" class="logo">
-					<span class="material-symbols-outlined mute-video" id="mute-video">volume_up </span>
+					
+					
+
 					<div class="lang">
 						<span class="active">en</span> / <span>th</span>
 					</div>
@@ -45,7 +44,16 @@
 					<span class="material-symbols-outlined">
 					keyboard_arrow_down
 					</span>
-				</a>
+				</a> 
+
+				<div class="box-sound" id="mute-video">
+					<span class="material-symbols-outlined mute-video" >volume_off </span>
+				</div>
+				<div class="box-sound pausex">
+					<span class="material-symbols-outlined" >play_arrow </span>
+				</div>
+
+
 			</div>
 		</section> 
 
@@ -353,10 +361,21 @@
 		$("#mute-video").click( function (){
 			if( $("video").prop('muted') ) {
 				$("video").prop('muted', false);
-				$('#mute-video').text("volume_up"); 
+				$('#mute-video .mute-video').text("volume_up"); 
 			} else {
 				$("video").prop('muted', true);
-				$('#mute-video').text("volume_off"); 
+				$('#mute-video .mute-video').text("volume_off"); 
+			}
+		});
+		
+		jQuery(".pausex").on('click', function(event) { 
+			var video = jQuery("#myVideo"); 
+			if (video.get(0).paused) {
+				video.get(0).play();
+				$('.pausex span').text("play_circle"); 
+			} else {
+				video.get(0).pause();
+				$('.pausex span').text("pause"); 
 			}
 		});
 		
