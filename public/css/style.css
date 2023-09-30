@@ -355,6 +355,81 @@ footer .top .linkx img{
   background: var(--bg-main2) !important;
   color: #fff !important;
 }
+.section4{ 
+  background: url(../images/anirudh-YQYacLW8o2U-unsplash-3.png) , #113149;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  padding-top: 50px; 
+  position: relative;
+  transition: 2s all ease-out; 
+  height: 100vh;
+  padding-bottom: 50px;
+}
+.section4:hover{ 
+  background-size: 115% auto !important; 
+}
+.section4::after{
+  content: "";
+  position: absolute;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 719px; 
+  background: transparent linear-gradient(180deg, var(--unnamed-color-113149) 0%, #113149E6 34%, #11314900 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #113149 0%, #113149E6 34%, #11314900 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: 1;
+}
+.section4 > div{ 
+  position: relative;
+  z-index: 4;
+}
+.section4 h2{ 
+  color: #fff;
+  text-align: center; 
+  opacity: 1;
+  font-size: 60px;
+  font-weight: 100;
+  font-family: 'Kanit', sans-serif;
+  margin-bottom: 50px;
+}
+.section4 h2 span{  
+  font-size: 40px; 
+} 
+.section4 h1{   
+  color: #fff; 
+  opacity: 1;
+  font-size: 130px;
+  font-weight: 100;
+  font-family: 'Kanit', sans-serif;
+  margin-bottom: 50px;
+  transition: .33s all ease-out; 
+  margin-bottom: 30px;
+  line-height: 120px;
+} 
+.section4 h1 span{  
+  font-weight: 500;
+  color: #C6A85A;
+}
+.section4 h1 i{  
+  font-style: normal;
+  transition: .33s all ease-out; 
+}
+.section4 h1:hover i{  
+  letter-spacing: 15px;
+}
+.section4 p{  
+  font-family: 'Kanit', sans-serif;
+  border-left: 3px solid #fff;
+  height: 250px;
+  padding: 30px 60px;
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+ 
 
 
 /*
@@ -471,6 +546,15 @@ font-family: 'Cormorant Garamond', serif;
     height: 450px;
     background-size: 100% auto !important;
   } 
+  .section4{  
+    background: url(../images/196190256_l_normal_none-2.png) , #113149;
+    background-position: center center !important; 
+    background-size:  100% auto  !important; 
+    height: unset;
+  } 
+  .section4:hover{ 
+    background-size: 115%  auto  !important; 
+  }
 }    
 
 @media screen and (max-width: 1600px) and (min-width: 821px) {
@@ -495,6 +579,15 @@ font-family: 'Cormorant Garamond', serif;
 @media screen and (max-width: 1025px) and (min-width: 769px) { 
   .select3 {  
     background-size: auto 100%  !important; 
+  }
+  .section4{  
+    background: url(../images/196190256_l_normal_none-2.png) , #113149;
+    background-position: center center !important; 
+    background-size:  100% auto  !important; 
+    height: unset;
+  } 
+  .section4:hover{ 
+    background-size: 115%  auto  !important; 
   }
 }  
 
@@ -613,7 +706,40 @@ font-family: 'Cormorant Garamond', serif;
     background-position: bottom -200px  center !important;
     background-repeat: no-repeat !important;
     background-size:  150%  auto !important; 
+  } 
+  .section4{  
+    background: url(../images/196190256_l_normal_none-2.png) , #113149;
+    background-position: center center !important; 
+    background-size:  100% auto  !important; 
+    height: unset;
+  } 
+  .section4:hover{ 
+    background-size: 115%  auto  !important; 
   }
+  .section4 h1:hover i{  
+    letter-spacing: 8px;
+  }
+  .section4::after{ 
+    height: 352px;  
+  } 
+  .section4{  
+    height: unset;
+  }
+  .section4 h2{  
+    font-size: 22px; 
+  }
+  .section4 h2 span{  
+    font-size: 16px; 
+  } 
+  .section4 h1{  
+    font-size: 74px; 
+    line-height: 65px;
+  } 
+  .section4 p{ 
+    margin-left: 0px;
+    padding: 15px 20px;
+    font-size: 18px;
+  }  
 }
 
 
